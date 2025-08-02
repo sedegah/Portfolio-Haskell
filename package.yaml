@@ -1,0 +1,14 @@
+name: haskell-portfolio
+version: 0.1.0.0
+dependencies:
+  - base >= 4.7 && < 5
+  - scotty
+  - lucid
+  - text
+  - directory
+  - filepath
+
+executables:
+  haskell-portfolio:
+    main: Main.hs
+    source-dirs: app
