@@ -1,4 +1,3 @@
-// ===== Dark Mode with Local Storage =====
 const darkModeToggle = document.getElementById('toggle-dark-mode');
 let darkMode = localStorage.getItem('darkMode') === 'true';
 
@@ -16,7 +15,6 @@ darkModeToggle.addEventListener('click', () => {
 
 applyDarkMode();
 
-// ===== Animate Elements on Scroll =====
 const animateOnScroll = () => {
   const elements = document.querySelectorAll('.section, .skill-item, .project-item, .category-card');
   elements.forEach(el => {
