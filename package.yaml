@@ -1,5 +1,6 @@
 name: haskell-portfolio
 version: 0.1.0.0
+
 dependencies:
   - base >= 4.7 && < 5
   - scotty
@@ -7,8 +8,13 @@ dependencies:
   - text
   - directory
   - filepath
+  - wai
+  - wai-extra
+  - wai-middleware-static
 
 executables:
   haskell-portfolio:
     main: Main.hs
     source-dirs: app
+    other-modules:
+      - Templates
